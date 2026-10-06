@@ -77,11 +77,10 @@ Para evitar escribir la ruta de la clave, el usuario y la dirección IP en cada 
 ## 6. Copiar el paquete SentinelAgent al servidor remoto
 Transfiere el instalador desde la carpeta donde te encuentres en PowerShell hacia la carpeta del usuario en el servidor:
 
-
 teleco
 ```powershell
 scp SentinelAgent_linux_x86_64_v25_1_2_17.deb telab-matap@192.168.199.245:/home/telab-matap/
-
+´´´
 Industriales
 ```powershell
 scp SentinelAgent_linux_x86_64_v25_1_2_17.deb telab-matap@192.168.201.245:/home/telab-matap/
