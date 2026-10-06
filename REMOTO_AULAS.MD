@@ -109,17 +109,15 @@ INDUSTRIALES
 ```
 192.168.201.88
 ```
-Usuario: alumnos
-
-Contraseña: alumnos
+Usuario: ```alumnos``` \
+Contraseña: ```alumnos```
 
 ETSI
 ```
 192.168.199.129
 ```
-Usuario: matap
-
-Contraseña: matap
+Usuario: ```matap```
+Contraseña: ```matap```
 
 ---
 
