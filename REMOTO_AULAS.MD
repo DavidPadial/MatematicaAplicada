@@ -110,6 +110,7 @@ INDUSTRIALES
 192.168.201.88
 ```
 Usuario: alumnos
+
 Contraseña: alumnos
 
 ETSI
@@ -117,6 +118,7 @@ ETSI
 192.168.199.129
 ```
 Usuario: matap
+
 Contraseña: matap
 
 ---
