@@ -80,11 +80,11 @@ Transfiere el instalador desde la carpeta donde te encuentres en PowerShell haci
 teleco
 ```powershell
 scp SentinelAgent_linux_x86_64_v25_1_2_17.deb telab-matap@192.168.199.245:/home/telab-matap/
-´´´
+```
 Industriales
 ```powershell
 scp SentinelAgent_linux_x86_64_v25_1_2_17.deb telab-matap@192.168.201.245:/home/telab-matap/
-´´´
+```
 ---
 
 ## 7. Ejecutar wake on lan del pc master del aula. 
@@ -92,7 +92,7 @@ scp SentinelAgent_linux_x86_64_v25_1_2_17.deb telab-matap@192.168.201.245:/home/
 
 ```powershell
 ./88_wol_up.sh
-´´´
+```
 ---
 
 ## 8. Entrar por escritorio demoto o RDP al pc. 
@@ -100,10 +100,10 @@ scp SentinelAgent_linux_x86_64_v25_1_2_17.deb telab-matap@192.168.201.245:/home/
 ETSI
 ```
 192.168.199.129
-´´´
+```
 INDUSTRIALES
 ```
 192.168.201.88
-´´´
-
 ```
+
+---
