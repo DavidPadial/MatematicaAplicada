@@ -1,4 +1,4 @@
-# Guía de Configuración SSH, Claves RSA y SCP en Windows (PowerShell)
+# Guía de Configuración SSH, Claves RSA y SCP en Windows (PowerShell) (solo necesario primera vez)
 
 Esta guía documenta los pasos requeridos para generar un par de claves SSH en Windows, copiarlas a un servidor Linux remoto, configurar el acceso rápido y transferir archivos de forma segura.
 
@@ -13,7 +13,7 @@ New-Item -ItemType Directory -Path "$env:USERPROFILE\.ssh" -Force
 
 ---
 
-## 2. Generar el par de claves RSA (4096 bits)
+## 2. Generar el par de claves RSA (4096 bits) 
 Crea la clave privada (`id_rsa_matap101_20250625`) y la clave pública (`id_rsa_matap101_20250625.pub`).
 
 > **Nota:** No agregues la extensión `.pub` al parámetro `-f`. El comando la añadirá automáticamente para la clave pública.
@@ -26,7 +26,7 @@ ssh-keygen -t rsa -b 4096 -f "$env:USERPROFILE\.ssh\id_rsa_matap101_20250625"
 
 ## 3. Copiar la clave pública al servidor remoto
 
-### Opción A: Sobrescribir o crear el archivo `authorized_keys`
+### Opción A: Sobrescribir o crear el archivo `authorized_keys` (hecha esta)
 Copia el archivo reemplazando completamente el `authorized_keys` destino (método directo si no existen otras claves guardadas):
 
 ```powershell
@@ -54,7 +54,7 @@ ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.199.24
 ```
 ---
 
-## 5. Configurar un alias SSH para acceso rápido (Opcional)
+## 5. Configurar un alias SSH para acceso rápido (Opcional) (no realizado)
 Para evitar escribir la ruta de la clave, el usuario y la dirección IP en cada conexión:
 
 1. Abre o crea el archivo de configuración en PowerShell:
@@ -77,7 +77,7 @@ Para evitar escribir la ruta de la clave, el usuario y la dirección IP en cada 
 
 ---
 
-## 6. Copiar el paquete SentinelAgent al servidor remoto
+## 6. Copiar el paquete SentinelAgent al servidor remoto (no realizado)
 Transfiere el instalador desde la carpeta donde te encuentres en PowerShell hacia la carpeta del usuario en el servidor:
 
 teleco
@@ -97,7 +97,7 @@ INDUSTRIALES:
 ./88_wol_up.sh
 ```
 
-ETSI
+ETSI (pendiente de ver el paquete)
 ```powershell
 ./88_wol_up.sh
 ```
