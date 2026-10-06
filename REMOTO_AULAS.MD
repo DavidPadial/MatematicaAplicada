@@ -104,15 +104,24 @@ ETSI
 
 ---
 
-## 8. Entrar por escritorio demoto o RDP al pc. 
+## 8. Entrar por escritorio demoto o RDP al pc y abrir Veyond. 
 INDUSTRIALES
 ```
 192.168.201.88
 ```
+Usuario: alumnos
+Contraseña: alumnos
+
 ETSI
 ```
 192.168.199.129
 ```
-
+Usuario: matap
+Contraseña: matap
 
 ---
+
+
+
+
+
