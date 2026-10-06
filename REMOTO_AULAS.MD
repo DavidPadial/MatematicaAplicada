@@ -44,11 +44,14 @@ Get-Content $env:USERPROFILE\.ssh\id_rsa_matap101_20250625.pub | ssh telab-matap
 
 ## 4. Probar la conexión por clave privada
 Como la clave tiene un nombre personalizado (no el por defecto `id_rsa`), debes especificar su ruta explícitamente con el parámetro `-i`:
-
+Industriales:
 ```powershell
 ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.199.245
 ```
-
+ETSI (CAMBIAR CLAVE)
+```powershell
+ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.199.245
+```
 ---
 
 ## 5. Configurar un alias SSH para acceso rápido (Opcional)
@@ -89,21 +92,27 @@ scp SentinelAgent_linux_x86_64_v25_1_2_17.deb telab-matap@192.168.201.245:/home/
 
 ## 7. Ejecutar wake on lan del pc master del aula. 
 
-
+INDUSTRIALES:
 ```powershell
 ./88_wol_up.sh
 ```
+
+ETSI
+```powershell
+./88_wol_up.sh
+```
+
 ---
 
 ## 8. Entrar por escritorio demoto o RDP al pc. 
-
-ETSI
-```
-192.168.199.129
-```
 INDUSTRIALES
 ```
 192.168.201.88
 ```
+ETSI
+```
+192.168.199.129
+```
+
 
 ---
