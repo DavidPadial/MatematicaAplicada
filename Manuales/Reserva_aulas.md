@@ -54,4 +54,5 @@ Si un profesor solicita únicamente acceso al Campus Virtual (sin requerir reser
 Poner ticket en el sistema de soporte.
 
 Llamar a Mariángeles Ponce para tramitar el acceso.
+
 ---
