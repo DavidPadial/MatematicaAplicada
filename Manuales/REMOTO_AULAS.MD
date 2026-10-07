@@ -48,10 +48,11 @@ Industriales:
 ```powershell
 ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.199.245
 ```
-ETSI (CAMBIAR CLAVE)
+ETSI 
 ```powershell
 ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_ETSI20261007 telab-matap@192.168.199.245
 ```
+Contraseña: 952012David$
 ---
 
 ## 5. Configurar un alias SSH para acceso rápido (Opcional) (no realizado)
