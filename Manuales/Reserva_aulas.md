@@ -47,3 +47,11 @@ https://reservas-espacios.uma.es/matap/index.php?view=day&page_date=2026-04-30&a
 
 Saludos
 ```
+---
+## 4. Solicitud de Solo Acceso a Campus Virtual
+Si un profesor solicita únicamente acceso al Campus Virtual (sin requerir reserva de aula):
+
+Poner ticket en el sistema de soporte.
+
+Llamar a Mariángeles Ponce para tramitar el acceso.
+---
