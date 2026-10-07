@@ -50,7 +50,7 @@ ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.199.24
 ```
 ETSI (CAMBIAR CLAVE)
 ```powershell
-ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.199.245
+ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_ETSI20261007 telab-matap@192.168.199.245
 ```
 ---
 
