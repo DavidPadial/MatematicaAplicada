@@ -33,7 +33,7 @@ Estimado Profesor,
 
 Tu solicitud de reserva ha sido concedida. Puedes comprobarlo en el siguiente enlace:
 
-[https://reservas-espacios.uma.es/matap/index.php?view=day&page_date=2026-04-30&area=2&room=4](https://reservas-espacios.uma.es/matap/index.php?view=day&page_date=2026-04-30&area=2&room=4)
+https://reservas-espacios.uma.es/matap/index.php?view=day&page_date=2026-04-30&area=2&room=4
 
 Saludos
 ```
@@ -43,7 +43,7 @@ Estimado Profesor,
 
 Tu solicitud de reserva ha sido concedida. Puedes comprobarlo en el siguiente enlace:
 
-[https://reservas-espacios.uma.es/matap/index.php?view=day&page_date=2026-04-30&area=1&room=1](https://reservas-espacios.uma.es/matap/index.php?view=day&page_date=2026-04-30&area=1&room=1)
+https://reservas-espacios.uma.es/matap/index.php?view=day&page_date=2026-04-30&area=1&room=1
 
 Saludos
 ```
