@@ -101,9 +101,9 @@ INDUSTRIALES:
 ./88_wol_up.sh
 ```
 
-ETSI (pendiente de ver el paquete)
+ETSI (pendiente crear fichero de arranque)
 ```powershell
-./88_wol_up.sh
+wakeonlan -i 192.168.199.255 A8:5E:45:12:F6:49
 ```
 
 ---
