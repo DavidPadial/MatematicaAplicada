@@ -48,17 +48,20 @@ Get-Content $env:USERPROFILE\.ssh\id_rsa_matap101_20250625.pub | ssh telab-matap
 
 ## 4. Probar la conexión por clave privada
 Como la clave tiene un nombre personalizado (no el por defecto `id_rsa`), debes especificar su ruta explícitamente con el parámetro `-i`:
-Industriales:
-```powershell
-ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.201.245
-```
-Contraseña:952012David
+
 
 ETSI 
 ```powershell
 ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_ETSI20261007 telab-matap@192.168.199.245
 ```
 Contraseña: 952012David$
+
+
+Industriales:
+```powershell
+ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.201.245
+```
+Contraseña:952012David
 
 ---
 
