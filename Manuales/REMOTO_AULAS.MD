@@ -133,9 +133,9 @@ Contraseña: ```matap```
 ---
 
 
-##DUDAS
+##IMPORTANTE
+---
+VEYON no funciona para encender los pcs desde el portatil. Es necesario hacer conectarse a un pc del aula o al servidor y arrancar los pcs
 
-veyon no me arranca pcs desde mi portatil. 
-no me funciona veyon de industriales
 
 
