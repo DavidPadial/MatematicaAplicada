@@ -133,6 +133,9 @@ Contraseña: ```matap```
 ---
 
 
+##DUDAS
 
+veyon no me arranca pcs desde mi portatil. 
+no me funciona veyon de industriales
 
 
