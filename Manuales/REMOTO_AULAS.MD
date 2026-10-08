@@ -36,19 +36,23 @@ scp $env:USERPROFILE\.ssh\id_rsa_matap101_20250625.pub telab-matap@192.168.199.2
 ### Opción B: Añadir la clave sin borrar claves existentes (Recomendado)
 Concatena el contenido de la clave pública al final del archivo `authorized_keys` remoto:
 
+ETSI:
 ```powershell
 Get-Content $env:USERPROFILE\.ssh\id_rsa_matap101_20250625.pub | ssh telab-matap@192.168.199.245 "cat >> /home/telab-matap/.ssh/authorized_keys"
 ```
-
+INDUSTRIALES:
+```powershell
+Get-Content $env:USERPROFILE\.ssh\id_rsa_matap101_20250625.pub | ssh telab-matap@192.168.201.245 "cat >> /home/telab-matap/.ssh/authorized_keys"
+```
 ---
 
 ## 4. Probar la conexión por clave privada
 Como la clave tiene un nombre personalizado (no el por defecto `id_rsa`), debes especificar su ruta explícitamente con el parámetro `-i`:
 Industriales:
 ```powershell
-ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.199.245
+ssh -i $env:USERPROFILE\.ssh\id_rsa_matap101_20250625 telab-matap@192.168.201.245
 ```
-Contraseña:952012David$
+Contraseña:952012David
 
 ETSI 
 ```powershell
