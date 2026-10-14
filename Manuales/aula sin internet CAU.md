@@ -6,7 +6,7 @@ markdown
 ***
 
 **Asunto:** Solicitud de prueba técnica - Limitación de internet en Laboratorio 1.1.10
-
+```text
 Buenos días, Mariángeles, Jesús o José:
 
 Me pongo en contacto con vosotros porque me gustaría realizar una prueba técnica en el Laboratorio 1.1.10 de Matemática Aplicada de cara a un próximo examen.
@@ -21,3 +21,4 @@ Un saludo,
 
 David Padial
 Departamento de matemática aplicada
+```
