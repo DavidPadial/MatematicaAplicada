@@ -50,6 +50,44 @@
 4. Espera a que la barra de progreso complete el 100%.
 5. Retira el pendrive y apaga/reinicia el equipo.
 
+### Paso 6: Configuración personalizada de cada equipo
+
+#### 1. Cambio de nombre del equipo
+Para cambiar el nombre del equipo de forma visual y rápida:
+1. Abre el **CMD** (Símbolo del sistema) como administrador.
+2. Ejecuta el siguiente comando para abrir las propiedades del sistema:
+   ```cmd
+   sysdm.cpl
+   ```
+3. En la pestaña *Nombre de equipo*, haz clic en *Cambiar*, introduce el nuevo nombre y reinicia el equipo.
+
+#### 2. Cambiar dirección IP
+Si las opciones de red están restringidas por directivas de grupo:
+1. Abre la ventana de Ejecutar (`Win + R`) o el CMD y escribe:
+   ```cmd
+   gpedit.msc
+   ```
+2. Navega hasta la directiva correspondiente para **desactivar el bloqueo de configuración de red** y permitir la modificación de las propiedades del adaptador (IP, máscara y puerta de enlace).
+
+#### 3. Configurar Proxy desde el Registro
+Para forzar o automatizar la configuración del servidor proxy del sistema:
+1. Abre el Editor del Registro ejecutando:
+   ```cmd
+   regedit
+   ```
+2. Navega hasta la ruta del registro encargada de los parámetros de red de Internet Explorer/Windows (`HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings`) y modifica los valores de configuración del proxy según los requerimientos de la red.
+
+#### 4. Configurar Antivirus y Desbloqueo de Directivas
+Para asegurar los permisos correctos antes de la instalación o ajuste del software de seguridad:
+1. Inicia sesión en el equipo con una cuenta de **usuario administrador**.
+2. Abre de nuevo el editor de directivas:
+   ```cmd
+   gpedit.msc
+   ```
+3. Accede a las plantillas administrativas para **desactivar la prohibición que impide el cambio de configuración del proxy**, garantizando que el antivirus o el tráfico del sistema puedan reportarse correctamente.
+4. Instalar sentinel desde el servicio del sci
+
+
 ---
 
 ## 3. Resolución de Problemas: Disco de destino más pequeño
@@ -69,3 +107,8 @@ Para evitar tener que usar el modo *Expert* en futuras clonaciones[cite: 2]:
 2. Haz clic derecho sobre la partición principal (C:) y selecciona **Reducir volumen**[cite: 2].
 3. Deja entre **30 GB y 50 GB de espacio no asignado** al final del disco[cite: 2].
 4. Vuelve a capturar la imagen. Esta nueva copia se podrá restaurar en cualquier disco de 500 GB o superior sin modificar parámetros[cite: 2].
+
+---
+
+## 4. Resolución de Problemas: acceso a web
+el usuario administrador no tiene acceso a internet. es necesario entrar al gpedit.msc y activar la configuracion y habilitar el proxy
