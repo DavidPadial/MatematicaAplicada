@@ -94,7 +94,76 @@ Para aplicar o retirar el proxy en los 60 ordenadores del aula sin tener que eje
 
 ---
 
-## 4. Verificación y Pruebas del Estado
+## 4. Configuraciones en el Editor de Directivas de Grupo Local (`gpedit.msc`)
+
+Para acceder al editor, presiona `Win + R`, escribe `gpedit.msc` y pulsa `Enter`.
+
+### A. Bloquear la modificación del Proxy por parte de los alumnos
+Evita que los usuarios puedan cambiar o desactivar la configuración del proxy desde la interfaz gráfica de Windows o Microsoft Edge/Chrome.
+
+1. **Impedir cambios en la configuración de proxy:**
+   * **Ruta:** `Configuración del equipo` > `Plantillas administrativas` > `Componentes de Windows` > `Internet Explorer`
+   * **Directiva:** `Impedir el cambio de configuración de proxy`
+   * **Estado:** **Habilitada**
+   * *Efecto:* Deshabilita los campos de edición de proxy en las Opciones de Internet del Panel de Control y Ajustes de Windows.
+
+2. **Aplicar la configuración de proxy a nivel de equipo (no por usuario):**
+   * **Ruta:** `Configuración del equipo` > `Plantillas administrativas` > `Componentes de Windows` > `Internet Explorer`
+   * **Directiva:** `Hacer coincidir la configuración de proxy por equipo (en lugar de por usuario)`
+   * **Estado:** **Habilitada**
+   * *Efecto:* Garantiza que la regla afecte a cualquier usuario o alumno que inicie sesión en la máquina.
+
+3. **Deshabilitar la pestaña Conexiones:**
+   * **Ruta:** `Configuración del usuario` > `Plantillas administrativas` > `Componentes de Windows` > `Internet Explorer` > `Panel de control de Internet`
+   * **Directiva:** `Deshabilitar la página Conexiones`
+   * **Estado:** **Habilitada**
+   * *Efecto:* Oculta por completo la pestaña desde donde se configura la LAN / Proxy.
+
+---
+
+### B. Desactivar el Protocolo QUIC (HTTP/3) y DoH
+Navegadores como Chrome y Edge utilizan por defecto el protocolo QUIC (sobre UDP 443), el cual ignora las configuraciones de proxy HTTP tradicionales. Es imprescindible desactivarlo por directiva o por firewall.
+
+#### Opción 1: Bloqueo de QUIC por Directiva de Grupo (Edge/Chrome)
+*Si tienes instaladas las plantillas administrativas (ADMX) de Microsoft Edge o Google Chrome:*
+
+* **Microsoft Edge:**
+  * **Ruta:** `Configuración del equipo` > `Plantillas administrativas` > `Microsoft Edge`
+  * **Directiva:** `Permitir el uso del protocolo QUIC`
+  * **Estado:** **Deshabilitado**
+
+* **Google Chrome:**
+  * **Ruta:** `Configuración del equipo` > `Plantillas administrativas` > `Google Chrome`
+  * **Directiva:** `Permitir el uso del protocolo QUIC`
+  * **Estado:** **Deshabilitado**
+
+#### Opción 2: Bloqueo de QUIC vía Firewall (Recomendado y más rápido)
+Si no dispones de las plantillas ADMX en los 60 equipos, puedes ejecutar esta regla de Firewall para bloquear todo el tráfico UDP saliente en el puerto 443:
+
+```cmd
+netsh advfirewall firewall add rule name="Bloquear_QUIC_UDP443" dir=out action=block protocol=UDP remoteport=443
+```
+
+---
+
+### C. Bloquear el acceso a `cmd` y `PowerShell` para alumnos (Opcional)
+Para evitar que los alumnos ejecuten scripts manuales de deshabilitación:
+
+1. **Impedir el acceso al Símbolo del Sistema (`cmd`):**
+   * **Ruta:** `Configuración del usuario` > `Plantillas administrativas` > `Sistema`
+   * **Directiva:** `Impedir el acceso al símbolo del sistema`
+   * **Estado:** **Habilitada** (puedes seleccionar *No* en la opción de desactivar la ejecución de archivos `.bat` si lanzas los scripts al inicio del sistema).
+
+---
+
+## 3. Resumen de Flujo de Trabajo en Aulas
+
+1. **Configuración inicial del aula:** Aplicar las directivas de `gpedit.msc` para bloquear el acceso visual a los ajustes de proxy y deshabilitar QUIC.
+2. **Durante el examen (desde Veyon Master):** Lanza el comando de ejecución remota con el script `Activar_Proxy1.bat` o `Activar_Proxy2.bat`.
+3. **Al finalizar el examen:** Lanza el comando con `Desactivar_Proxy.bat` para restaurar la conectividad total.
+---
+
+## 5. Verificación y Pruebas del Estado
 
 Para verificar que el filtrado funciona de forma idónea en un equipo del aula:
 
