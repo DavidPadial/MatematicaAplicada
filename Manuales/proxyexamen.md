@@ -1,4 +1,4 @@
-# Manual de Configuración y Automatización de Proxy para Exámenes CON .BAT
+# Manual de Configuración y Automatización de Proxy para Exámenes usando .BAT
 **Departamento / Aulas de Informática MATAP - UMA**
 
 Este manual detalla el procedimiento para aplicar y revertir la configuración de proxy de Windows mediante scripts de comandos (`.bat`). La finalidad es restringir el acceso general a Internet durante la realización de exámenes, permitiendo únicamente el acceso a los dominios de la UMA y a los repositorios/licencias de software docente (R/CRAN, Scilab, MathWorks y red local).
