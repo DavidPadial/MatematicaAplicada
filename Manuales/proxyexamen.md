@@ -103,19 +103,25 @@ Para acceder al editor, presiona `Win + R`, escribe `gpedit.msc` y pulsa `Enter`
 ### A. Bloquear la modificación del Proxy por parte de los alumnos
 Evita que los usuarios puedan cambiar o desactivar la configuración del proxy desde la interfaz gráfica de Windows o Microsoft Edge/Chrome.
 
-1. **Impedir cambios en la configuración de proxy:**
+1. **Impedir cambios en la configuración y panel de control:**
+   * **Ruta:** `Configuración del equipo` > `Plantillas administrativas` > `Panel de control` > `Prohibir el acceso a configuración de PC y Panel de control`
+   * **Directiva:** `Prohibir el acceso a configuración de PC y Panel de control`
+   * **Estado:** **Habilitada**
+   * *Efecto:* Deshabilita todos los programas del Panel de control y la aplicación Configuración de PC.
+
+2. **Impedir cambios en la configuración de proxy:**
    * **Ruta:** `Configuración del equipo` > `Plantillas administrativas` > `Componentes de Windows` > `Internet Explorer`
    * **Directiva:** `Impedir el cambio de configuración de proxy`
    * **Estado:** **Habilitada**
    * *Efecto:* Deshabilita los campos de edición de proxy en las Opciones de Internet del Panel de Control y Ajustes de Windows.
 
-2. **Aplicar la configuración de proxy a nivel de equipo (no por usuario):**
+3. **Aplicar la configuración de proxy a nivel de equipo (no por usuario) NO RECOMENDABLE. EL ADMIN NO QUIERO QUE TENGA EL PROXY:**
    * **Ruta:** `Configuración del equipo` > `Plantillas administrativas` > `Componentes de Windows` > `Internet Explorer`
    * **Directiva:** `Hacer coincidir la configuración de proxy por equipo (en lugar de por usuario)`
    * **Estado:** **Habilitada**
    * *Efecto:* Garantiza que la regla afecte a cualquier usuario o alumno que inicie sesión en la máquina.
 
-3. **Deshabilitar la pestaña Conexiones:**
+4. **Deshabilitar la pestaña Conexiones:**
    * **Ruta:** `Configuración del usuario` > `Plantillas administrativas` > `Componentes de Windows` > `Internet Explorer` > `Panel de control de Internet`
    * **Directiva:** `Deshabilitar la página Conexiones`
    * **Estado:** **Habilitada**
