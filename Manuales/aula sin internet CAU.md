@@ -22,3 +22,24 @@ Un saludo,
 David Padial
 Departamento de matemática aplicada
 ```
+---
+
+##Petición examen:
+
+```text
+
+Hola, Mariángeles, Jesús o José:
+
+Os escribo porque la próxima semana tenemos exámenes en el Laboratorio 1.1.10 de Matemática Aplicada y necesitamos limitar el acceso a internet para que los alumnos solo puedan entrar al Campus Virtual.
+En concreto, los horarios de los cortes serían los siguientes:
+
+• Miércoles 21 de octubre: de 09:15 a 11:15
+• Viernes 23 de octubre: de 12:30 a 14:30
+
+Para el examen del miércoles, como el inicio suele ser el momento más crítico, os agradecería si fuese posible estar un poco atentos durante los primeros 15 o 30 minutos por si tuviéramos algún imprevisto y necesitáramos reactivarlo rápidamente.
+Ya me confirmáis si os viene bien dejarlo programado. ¡Muchas gracias por vuestra ayuda!
+
+Un saludo,
+David Padial
+Departamento de Matemática Aplicada
+``
