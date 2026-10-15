@@ -68,6 +68,8 @@ pause
 * **`ProxyOverride = ""`**: Vacía la lista de excepciones configurada.
 
 ---
+#FALTA UN SCRITP PARA PONER EL PROXY.SATD.UMA.ES O EL PROXY.UMA.ES
+---
 
 ## 3. Métodos de Despliegue en Aulas de Informática
 
