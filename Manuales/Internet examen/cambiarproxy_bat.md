@@ -3,6 +3,9 @@
 
 Este manual detalla el procedimiento para aplicar y revertir la configuración de proxy de Windows mediante scripts de comandos (`.bat`). La finalidad es restringir el acceso general a Internet durante la realización de exámenes, permitiendo únicamente el acceso a los dominios de la UMA y a los repositorios/licencias de software docente (R/CRAN, Scilab, MathWorks y red local).
 
+escribir scripts en C:\windows\mat
+echar un ojo al script de incio y cierre. se ejecutan desde gpedit
+
 ---
 
 ## 1. Script 1: Activar Proxy para Examen
