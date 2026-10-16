@@ -16,17 +16,22 @@ Este script modifica el Registro de Windows del usuario actual (`HKCU`) para for
 
 ```cmd
 @echo off
+chcp 65001 > nul
+
 :: 1. Habilitar uso de proxy
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1 /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1 /f > nul
 
 :: 2. Configurar proxy y puerto
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d "proxy.matapexamen.uma.es:3128" /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d "proxy.matapexamen.uma.es:3128" /f > nul
 
 :: 3. Excepciones: UMA, subred UMA (150.214.*), CRAN (R), Scilab, MathWorks y red local
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyOverride /t REG_SZ /d "*.uma.es;uma.es;150.214.*;*.r-project.org;*.scilab.org;*.mathworks.com;<local>" /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyOverride /t REG_SZ /d "*.uma.es;uma.es;150.214.*;*.r-project.org;*.scilab.org;*.mathworks.com;<local>" /f > nul
 
-echo Configuración de proxy con excepciones para programas aplicada.
-pause
+echo MODO EXAMEN ACTIVADO.
+echo Google no te va a salvar hoy.
+echo Todo acceso a Internet ha sido neutralizado.Cualquier intento de evasión quedará registrado.
+pause > nul
+
 ```
 
 ### Explicación detallada de las claves del registro
@@ -71,7 +76,34 @@ pause
 * **`ProxyOverride = ""`**: Vacía la lista de excepciones configurada.
 
 ---
-#FALTA UN SCRITP PARA PONER EL PROXY.SATD.UMA.ES O EL PROXY.UMA.ES
+## 3. Script 3: Desactivar Proxy (Restablecer Acceso)
+
+Este script activa el proxy satd y limpia las entradas en el Registro de Windows para restaurar la navegación normal tras finalizar la prueba.
+
+### Archivo: `proxysatd.bat`
+
+```cmd
+@echo off
+
+:: Activar el uso de servidor proxy
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1 /f > nul
+
+:: Definir la direccion del proxy y puerto
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d "proxy.satd.uma.es:3128" /f > nul
+
+:: Definir excepciones (*.uma.es y conexiones locales)
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyOverride /t REG_SZ /d "*.uma.es;<local>" /f > nul
+
+echo Modo examen DESHABILITADO.
+pause > nul
+
+
+
+```
+
+
+
+
 ---
 
 ## 3. Métodos de Despliegue en Aulas de Informática
