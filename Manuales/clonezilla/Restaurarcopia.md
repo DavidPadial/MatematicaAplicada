@@ -59,7 +59,7 @@ Para cambiar el nombre del equipo de forma visual y rápida:
    ```cmd
    sysdm.cpl
    ```
-3. En la pestaña *Nombre de equipo*, haz clic en *Cambiar*, introduce el nuevo nombre y reinicia el equipo.
+3. En la pestaña *Nombre de equipo*, haz clic en *Cambiar*, introduce el nuevo nombre y reinicia el equipo. Ej: ```matap151```
 
 #### 2. Cambiar dirección IP
 Si las opciones de red están restringidas por directivas de grupo:
