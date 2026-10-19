@@ -67,6 +67,13 @@ Si las opciones de red están restringidas por directivas de grupo:
    ```cmd
    gpedit.msc
    ```
+
+Direccion ip: ```192.168.199.151```
+Mascara de subred: ```255.255.255.128```
+Puerta de enlace predeterminada: ```192.168.199.254```
+Servidor DNS preferido: ```150.214.40.11```
+Servidor DNS alternativo: ```150.214.40.12```
+   
 2. Navega hasta la directiva correspondiente para **desactivar el bloqueo de configuración de red** y permitir la modificación de las propiedades del adaptador (IP, máscara y puerta de enlace).
 
 #### 3. Configurar Proxy desde el Registro
