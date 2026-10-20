@@ -89,7 +89,7 @@ sentinelctl uninstall -t "HOWE GALE SEC LORE COT BOAT ARGO POP WADE MADE STAY EC
 
 > **Nota:** Si la variable de entorno no reconoce `sentinelctl` de forma directa, acude primero a la carpeta de instalación del agente:
 > ```cmd
-> cd "C:\Program Files\SentinelOne\Sentinel Agent"
+> cd "C:\Program Files\SentinelOne\Sentinel Agent 26.2.3.158"
 > sentinelctl.exe uninstall -t "HOWE GALE SEC LORE COT BOAT ARGO POP WADE MADE STAY ECHO"
 > ```
 
