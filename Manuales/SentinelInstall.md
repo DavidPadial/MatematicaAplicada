@@ -84,7 +84,7 @@ cmd.exe /c "C:\Windows\mat\instalar_sentinel.bat"
 Ejecutar desde el Símbolo del Sistema (**CMD como Administrador**):
 > **Nota:** Si la variable de entorno no reconoce `sentinelctl` de forma directa, acude primero a la carpeta de instalación del agente:
 ```cmd
-start /wait "" "C:\Windows\mat\SentinelOneInstaller_windows_64bit_v26_2_3_158.exe" -c -t "eyJ1cmwiOiAiaHR0cHM6Ly9ldWNlMS0xMDYuc2VudGluZWxvbmUubmV0IiwgInNpdGVfa2V5IjogIjA2ODY0MjllYjIwZDk2Mjc4MTI3MjYzMWZhZDJkM3YzYmI0ODg2ZWNiODNlMjBjOTRhOTM1YzRhN2E1ZjE3MmEifQ==" -k "HOWE GALE SEC LORE COT BOAT ARGO POP WADE MADE STAY ECHO"
+start /wait "" "C:\Windows\mat\SentinelOneInstaller_windows_64bit_v25_1_3_334.exe" -c -t "eyJ1cmwiOiAiaHR0cHM6Ly9ldWNlMS0xMDYuc2VudGluZWxvbmUubmV0IiwgInNpdGVfa2V5IjogIjA2ODY0MjllYjIwZDk2Mjc4MTI3MjYzMWZhZDJkM3YzYmI0ODg2ZWNiODNlMjBjOTRhOTM1YzRhN2E1ZjE3MmEifQ==" -k "HOWE GALE SEC LORE COT BOAT ARGO POP WADE MADE STAY ECHO"
 ```
 
 
