@@ -10,6 +10,7 @@ Set-ItemProperty -Path $wininetPath -Name "ProxyServer" -Value "proxy.matapexame
 
 $excepciones = "*cv.uma.es;uma.es;150.214.*;*.r-project.org;*.scilab.org;*.mathworks.com;*.sentinelone.net;*cdn.jsdelivr.net;<local>"
 Set-ItemProperty -Path $wininetPath -Name "ProxyOverride" -Value $excepciones -ErrorAction SilentlyContinue
+#se filtra toda uma.es excepto cv.uma.es porque en cosigna.unma.es se puede acceder
 
 # 2. Refrescar la red en memoria (WinINet) de inmediato
 $wininet = Add-Type -MemberDefinition @"
