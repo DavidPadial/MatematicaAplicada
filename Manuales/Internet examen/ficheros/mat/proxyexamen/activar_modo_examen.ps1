@@ -8,7 +8,7 @@ $wininetPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Setting
 Set-ItemProperty -Path $wininetPath -Name "ProxyEnable" -Value 1 -ErrorAction SilentlyContinue
 Set-ItemProperty -Path $wininetPath -Name "ProxyServer" -Value "proxy.matapexamen.uma.es:3128" -ErrorAction SilentlyContinue
 
-$excepciones = "*.uma.es;uma.es;150.214.*;*.r-project.org;*.scilab.org;*.mathworks.com;*.sentinelone.net;<local>"
+$excepciones = "*cv.uma.es;uma.es;150.214.*;*.r-project.org;*.scilab.org;*.mathworks.com;*.sentinelone.net;*cdn.jsdelivr.net;<local>"
 Set-ItemProperty -Path $wininetPath -Name "ProxyOverride" -Value $excepciones -ErrorAction SilentlyContinue
 
 # 2. Refrescar la red en memoria (WinINet) de inmediato
