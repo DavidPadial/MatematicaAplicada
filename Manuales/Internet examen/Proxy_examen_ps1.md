@@ -278,7 +278,7 @@ lockPref("privacy.clearOnShutdown.cookies", true);
 
 Para ejecutar las acciones en remoto de manera unificada a través de **Veyon Master**, seleccionar todos los equipos objetivo, abrir la función **"Iniciar aplicación" / "Ejecutar comando"** e ingresar las órdenes según el procedimiento requerido:
 
-### Comandos de Despliegue en Veyon (funcionan desde ejecutar pero no desde veyon)
+### Comandos de Despliegue en Veyon 
 
 * **Activar Modo Examen (PowerShell):**
   ```cmd
