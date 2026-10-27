@@ -21,6 +21,11 @@ Ejecutar la siguiente orden desde una consola con permisos de **Administrador**:
 ```cmd
 start /wait "" "C:\Windows\mat\SentinelOneInstaller_windows_64bit_v25_1_3_334.exe" -q -a "SERVER_PROXY=http://proxy.satd.uma.es:3128" -t "eyJ1cmwiOiAiaHR0cHM6Ly9ldWNlMS0xMDYuc2VudGluZWxvbmUubmV0IiwgInNpdGVfa2V5IjogIjA2ODY0MjllYjIwZDk2Mjc4MTI3MjYzMWZhZDJkM3YzYmI0ODg2ZWNiODNlMjBjOTRhOTM1YzRhN2E1ZjE3MmEifQ=="
 ```
+Comprobar que se está ejecutando la instalacion
+
+```cmd
+tasklist /FI "IMAGENAME eq SentinelOneInstaller_windows_64bit_v25_1_3_334.exe"
+```
 
 ---
 
