@@ -282,17 +282,18 @@ Para ejecutar las acciones en remoto de manera unificada a través de **Veyon Ma
 
 * **Activar Modo Examen (PowerShell):**
   ```cmd
-    powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Windows\Mat\proxyexamen\activar_modo_examen.ps1"
+    C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "C:\Windows\Mat\proxyexamen\activar_modo_examen.ps1"
   ```
 
 * **Desactivar Modo Examen / Restaurar Proxy Habitual (PowerShell):**
   ```cmd
-   powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Windows\Mat\proxyexamen\desactivar_modo_examen.ps1"
+   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "C:\Windows\Mat\proxyexamen\desactivar_modo_examen.ps1"
   ```
 
 * **Desactivar Proxy por Completo (PowerShell):**
   ```cmd
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Windows\Mat\proxyexamen\desactivar_proxy.ps1"
+  C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "C:\Windows\Mat\proxyexamen\desactivar_proxy.ps1"
+
   ```
 
 * **Ejecutar Inicio Unificado (`inicio.bat`):**
