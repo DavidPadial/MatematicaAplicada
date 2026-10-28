@@ -285,9 +285,14 @@ Para ejecutar las acciones en remoto de manera unificada a través de **Veyon Ma
   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "C:\Windows\Mat\proxyexamen\activar_modo_examen.ps1"
   ```
 
-* **Desactivar Modo Examen / Restaurar Proxy Habitual (PowerShell):**
+* **Desactivar Modo Examen / Restaurar Proxy Habitual COMPLEJO TECNOLOGICO(PowerShell):**
   ```cmd
    C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "C:\Windows\Mat\proxyexamen\desactivar_modo_examen.ps1"
+  ```
+
+  * **Desactivar Modo Examen / Restaurar Proxy Habitual IDUSTRIALES(PowerShell):**
+  ```cmd
+   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "C:\Windows\Mat\proxyexamen\desactivar_modo_examen_ind.ps1"
   ```
 
 * **Desactivar Proxy por Completo (PowerShell):**
