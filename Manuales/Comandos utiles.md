@@ -18,3 +18,8 @@ Cambiar nombre del pc
 ```cmd
 wmic computersystem where caption='nombre_actual' rename 'nuevo_nombre'
 ```
+
+Configurar ip del pc
+```cmd
+ncpa.cpl
+```
