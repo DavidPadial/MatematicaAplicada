@@ -13,7 +13,6 @@ Consultar nombre actual
 hostname
 ```
 
-
 Cambiar nombre del pc
 ```cmd
 wmic computersystem where caption='nombre_actual' rename 'nuevo_nombre'
@@ -22,4 +21,9 @@ wmic computersystem where caption='nombre_actual' rename 'nuevo_nombre'
 Configurar ip del pc
 ```cmd
 ncpa.cpl
+```
+
+Cambiar configuración del proxy
+```cmd
+inetcpl.cpl
 ```
