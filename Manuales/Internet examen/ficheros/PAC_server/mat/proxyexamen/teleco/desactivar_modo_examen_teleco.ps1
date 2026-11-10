@@ -1,6 +1,6 @@
 # 1. Configurar la ruta del archivo PAC local en el Registro de Windows (HKCU - Sin permisos de administrador)
-$pacPath = "C:\Windows\mat\proxyexamen\teleco\proxy_teleco.pac"
-$pacUrl = "file:///" + $pacPath.Replace('\', '/')
+$pacPath = "192.168.199.199/pac/teleco/proxy_teleco.pac"
+$pacUrl = "http://" + $pacPath.Replace('\', '/')
 
 $regPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
 Set-ItemProperty -Path $regPath -Name "AutoConfigURL" -Value $pacUrl
