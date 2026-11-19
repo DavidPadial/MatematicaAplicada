@@ -141,6 +141,7 @@ location /ps1/ {
   ```powershell
  powershell -ExecutionPolicy Bypass -Command "Get-Content 'C:\Windows\mat\proxy_teleco.ps1' -Raw | Invoke-Expression"
   ```
+
 * **Restaurar proxy normal desde servidor (alternativa):**
   ```powershell
   powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/proxy_teleco.ps1 | Out-String)"
@@ -160,6 +161,7 @@ location /ps1/ {
   ```powershell
 powershell -ExecutionPolicy Bypass -Command "Get-Content 'C:\Windows\mat\proxy_industriales.ps1' -Raw | Invoke-Expression"
   ```
+  
 * **Restaurar proxy normal desde servidor (alternativa):**
   ```powershell
   powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/proxy_industriales.ps1 | Out-String)"
