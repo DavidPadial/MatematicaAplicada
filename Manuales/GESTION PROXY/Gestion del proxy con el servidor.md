@@ -131,40 +131,44 @@ location /ps1/ {
 
 * **Activar modo examen (desde servidor):**
   ```powershell
-  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/activar_modo_examen_teleco.ps1 | Out-String)"
+  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199 | Out-String)"
   ```
+
 * **Desactivar modo examen (desde servidor):**
   ```powershell
-  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/desactivar_modo_examen_teleco.ps1 | Out-String)"
+  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199 | Out-String)"
   ```
+
 * **Restaurar proxy normal SIN servidor (usando fichero local en `C:\Windows\mat\`):**
   ```powershell
- powershell -ExecutionPolicy Bypass -Command "Get-Content 'C:\Windows\mat\proxy_teleco.ps1' -Raw | Invoke-Expression"
+  powershell -ExecutionPolicy Bypass -Command "Get-Content 'C:\Windows\mat\proxy_teleco.ps1' -Raw | Invoke-Expression"
   ```
 
 * **Restaurar proxy normal desde servidor (alternativa):**
   ```powershell
-  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/proxy_teleco.ps1 | Out-String)"
+  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199 | Out-String)"
   ```
 
 ### Aula de Industriales
 
 * **Activar modo examen (desde servidor):**
   ```powershell
-  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/activar_modo_examen_industriales.ps1 | Out-String)"
+  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199 | Out-String)"
   ```
+
 * **Desactivar modo examen (desde servidor):**
   ```powershell
-  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/desactivar_modo_examen_industriales.ps1 | Out-String)"
+  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199 | Out-String)"
   ```
+
 * **Restaurar proxy normal SIN servidor (usando fichero local en `C:\Windows\mat\`):**
   ```powershell
-powershell -ExecutionPolicy Bypass -Command "Get-Content 'C:\Windows\mat\proxy_industriales.ps1' -Raw | Invoke-Expression"
+  powershell -ExecutionPolicy Bypass -Command "Get-Content 'C:\Windows\mat\proxy_industriales.ps1' -Raw | Invoke-Expression"
   ```
-  
+
 * **Restaurar proxy normal desde servidor (alternativa):**
   ```powershell
-  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199.199/ps1/proxy_industriales.ps1 | Out-String)"
+  powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (curl.exe -s http://192.168.199 | Out-String)"
   ```
 
 ---
